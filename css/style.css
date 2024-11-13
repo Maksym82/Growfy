@@ -160,6 +160,7 @@ body {
     width: 100%;
     height: 2px;
     background-color: #fff;
+    transition: all 0.3s linear;
   }
   .icon-menu::before {
     top: 0;
@@ -169,6 +170,17 @@ body {
   }
   .icon-menu span {
     top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu span{
+    width: 0;
+  }
+  .menu-open .icon-menu::before {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+  .menu-open .icon-menu::after {
+    bottom: calc(50% - 1px);
+    transform: rotate(45deg);
   }
   .menu__body {
     position: fixed;
@@ -203,6 +215,11 @@ body {
   .header__container {
     min-height: 70px;
   }
+}
+
+.menu-open .menu__body,
+.menu-open .menu__body::before {
+    left: 0;
 }
 
 @media (max-width: 560px) {
