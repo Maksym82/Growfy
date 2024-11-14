@@ -24,6 +24,8 @@ body {
 .page {
   flex: 1 1 auto;
 }
+.page__main {
+}
 
 .button {
   display: inline-block;
@@ -47,6 +49,14 @@ body {
 
 .button:hover {
   background-color: #145caa;
+}
+
+.button_dark {
+  background-color: rgba(129, 129, 139, 0.2);
+}
+
+.button_dark:hover {
+  background-color: rgba(129, 129, 139, 1);
 }
 
 /* Header */
@@ -237,4 +247,71 @@ body {
     .cart-header__text {
         display: none;
     }
+}
+
+/* Page Main */
+.main {
+  padding-top: 160px;
+}
+.main__container {
+  display: flex;
+  gap: 32px;
+}
+.main__content {
+  flex: 0 1 50%;
+}
+.main__title {
+}
+.main__text {
+}
+.main__actions {
+}
+.main__button {
+}
+
+
+.main__images {
+  flex: 0 1 50%;
+}
+.images-main {
+  display: flex;
+  gap: 9.615385%; /* 60/624 */
+  justify-content: center;
+}
+.images-main__column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.images-main__item {
+  border-radius: 50% / 29%;
+  overflow: hidden;
+}
+
+.images-main__item_1, 
+.images-main__item_4 {
+  border-radius: 50% / 29%;
+}
+
+.images-main__item_2 {
+  border-radius: 50% 50% 0 50%;
+}
+.images-main__item_3 {
+  border-radius: 50% 0 50% 50%;
+}
+
+.images-main__item img {
+  max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .main {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    padding-top: 100px;
+  }
 }
