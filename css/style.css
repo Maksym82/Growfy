@@ -56,7 +56,7 @@ body {
 }
 
 .button_dark:hover {
-  background-color: rgba(129, 129, 139, 1);
+  background-color: rgba(129, 129, 139, 0.5);
 }
 
 .header-main {
@@ -76,14 +76,27 @@ body {
 }
 
 .header-main__text {
+  max-width: 500px;
   font-size: 18px;
   line-height: 1.5;
   color: #9c9c9c;
 }
 
+.header-main__text:not(:last-child) {
+  margin-bottom: 33px;
+}
+
 .text {
   line-height: 1.5;
 }
+
+.header-main__actions {
+  display: flex;
+  gap: 32px;
+}
+.header-main__button {
+}
+
 
 /* Header */
 .header {
@@ -287,10 +300,11 @@ body {
   align-self: center;
 }
 
-.main__content {
+.main__header {
+  position: relative;
 }
 
-.main__title::before {
+.main__header::before {
   content: "";
   background: url("../img/main/decor.svg");
   width: 122px;
