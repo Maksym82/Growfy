@@ -488,16 +488,28 @@ body {
   padding-bottom: 100px;
 }
 .services__container {
+  display: flex;
+  gap: 32px;
 }
 .services__content {
+  flex: 0 1 50%;
 }
 .services__header {
 }
 .services__items {
+  flex: 0 1 50%;
+  display: flex;
+  gap: 32px;
+  justify-content: center;  
 }
 .services__column {
+
 }
 .services__item {
+  /* display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex: 0 1 50%; */
 }
 .item-service {
 }
