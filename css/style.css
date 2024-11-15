@@ -115,6 +115,12 @@ body {
   .header-main__title {
     font-size: 32px;
   }
+  .header-main__title:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .header-main__text:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -127,9 +133,10 @@ body {
 .header {
   position: fixed;
   width: 100%;
+  z-index: 50;
   top: 0;
   left: 0;
-  background-color: rgba(13, 13, 17, 0.5);
+  background-color: rgba(13, 13, 17, 0.7);
 }
 .header__container {
   display: flex;
@@ -315,6 +322,7 @@ body {
 /* Page Main */
 .main {
   padding-top: 160px;
+  padding-bottom: 100px;
 }
 .main__container {
   display: flex;
@@ -384,12 +392,14 @@ body {
 @media (max-width: 991.98px) {
   .main {
     padding-top: 120px;
+    padding-bottom: 60px;
   }
 }
 
 @media (max-width: 767.98px) {
   .main {
     padding-top: 100px;
+    padding-bottom: 30px;
   }
   .main__container {
     flex-direction: column;
