@@ -26,6 +26,8 @@ body {
 }
 .page__main {
 }
+.page__clients {
+}
 
 .button {
   display: inline-block;
@@ -407,4 +409,32 @@ body {
   .main__content {
     align-items: stretch;
   }
+}
+/* ============================================ */
+/* Clients */
+.clients {
+  padding-top: 92px;
+  padding-bottom: 160px;
+}
+.clients__container {
+}
+.clients__title {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.clients__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+}
+.clients__item {
+}
+.clients__item img {
+  min-width: 100%;
 }
