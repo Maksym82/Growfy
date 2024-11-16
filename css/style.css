@@ -123,6 +123,31 @@ body {
 .header-main__button {
 }
 
+.header-main__list {
+}
+.header-main__list li {
+  position: relative;
+  min-height: 32px;
+  padding-left: 40px;
+  color: #9c9c9c;
+  padding-top: 4px;
+  line-height: 1.5;
+}
+.header-main__list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.header-main__list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: url("../img/why/li.svg") center no-repeat;
+  background-color: rgba(129, 129, 139, 0.1);
+}
+
 @media (max-width: 991.98px) {
   .header-main__title {
     font-size: 44px;
@@ -578,7 +603,8 @@ body {
 }
 .why__container {
   display: flex;
-  gap: 64px;
+  column-gap: 64px;
+  row-gap: 32px;
 }
 .why__images {
   flex: 0 1 50%;
@@ -586,6 +612,7 @@ body {
 .images-why {
   display: flex;
   position: relative;
+  align-self: flex-end;
 }
 .images-why__item {
   overflow: hidden;
@@ -629,5 +656,8 @@ body {
   .why {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .why__container {
+    flex-direction: column-reverse;
   }
 }
