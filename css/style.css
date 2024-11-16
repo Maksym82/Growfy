@@ -32,6 +32,8 @@ body {
 }
 .page__why {
 }
+.page__advantages {
+}
 
 .button {
   display: inline-block;
@@ -660,4 +662,30 @@ body {
   .why__container {
     flex-direction: column-reverse;
   }
+}
+
+/* ======================================== */
+/* Advantages */
+.advantages {
+}
+.advantages__container {
+  display: flex;
+}
+.advantages__items {
+  flex: 1 1 auto;
+  padding-right: 32px;
+  display: grid;
+  gap: 32px;
+}
+.advantages__item {
+}
+.advantages__value {
+}
+.advantages__text {
+}
+.advantages__image {
+  flex: 0 0 38%; 
+}
+.advantages__image img {
+  max-width: 100%;
 }
