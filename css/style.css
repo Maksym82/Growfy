@@ -966,12 +966,34 @@ body {
   text-decoration: underline;
 }
 
+@media (max-width: 1100px) {
+  .blog__items {
+    gap: 20px;
+  }
+  .item-blog__body {
+    padding: 25px 15px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .blog__header {
+    margin-bottom: 44px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .blog {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .item-testimonial {
-    padding: 30px 15px;
+  .blog__header {
+    margin-bottom: 24px;
+  }
+  .blog__items {
+    grid-template-columns: auto;
   }
 }
