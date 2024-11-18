@@ -39,6 +39,13 @@ body {
 .page__blog {
 }
 .page__start {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 991.98) {
+  .page__start {
+    margin-bottom: 50px;
+  }
 }
 
 .button {
@@ -1059,3 +1066,6 @@ body {
     flex-direction: column;
   }
 }
+
+/* ======================================================= */
+/* Footer */
