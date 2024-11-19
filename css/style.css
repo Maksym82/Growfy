@@ -1069,3 +1069,64 @@ body {
 
 /* ======================================================= */
 /* Footer */
+.footer {
+}
+.footer__main {
+}
+.main-footer {
+}
+.main-footer__container {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: minmax(auto, 378px) auto auto minmax(auto, 378px);
+}
+.main-footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main-footer__logo {
+}
+.main-footer__text {
+}
+.main-footer__social {
+}
+.social {
+}
+.social__link {
+}
+.main-footer__label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.main-footer__menu {
+}
+.menu-footer {
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+}
+.menu-footer__link {
+}
+.main-footer__subscribe {
+}
+.subscribe {
+}
+.subscribe__text {
+}
+.subscribe__form {
+}
+.subscribe__input {
+}
+.subscribe__button {
+}
+.footer__bottom {
+}
+.bottom-footer {
+}
+.bottom-footer__copy {
+}
