@@ -430,22 +430,6 @@ body {
   flex-direction: column;
   gap: 32px;
 }
-.images-main__item {
-  border-radius: 50% / 29%;
-  overflow: hidden;
-}
-
-.images-main__item_1,
-.images-main__item_4 {
-  border-radius: 50% / 29%;
-}
-
-.images-main__item_2 {
-  border-radius: 50% 50% 0 50%;
-}
-.images-main__item_3 {
-  border-radius: 50% 0 50% 50%;
-}
 
 .images-main__item img {
   max-width: 100%;
@@ -620,12 +604,9 @@ body {
 .images-why__item img {
   max-width: 100%;
 }
-.images-why__item_1 {
-  border-radius: 90% 0 49% 49% / 50% 0 31% 31%;
-}
+
 .images-why__item_2 {
   align-self: flex-end;
-  border-radius: 50% 50% 50% 0;
 }
 .why__content {
   flex: 0 1 50%;
