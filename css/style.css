@@ -1114,8 +1114,26 @@ body {
   display: none;
   cursor: pointer;
   z-index: 15;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  #scrollToTop {
+    left: 82%;
+  }
+}
+
+@media (min-width: 800px) {
+  #scrollToTop {
+    left: 85%;
+  }
 }
 
 .scroll-up {
   fill: #145caa;
+  transition: fill 0.3s linear;
+}
+
+.scroll-up:hover {
+  fill: #64aaf5;
 }
