@@ -1105,3 +1105,17 @@ body {
     padding-bottom: 30px;
   }
 }
+
+/* Scroll up */
+#scrolToTop {
+  position: fixed;
+  bottom: 35px;
+  left: 75%;
+  display: none;
+  cursor: pointer;
+  z-index: 15;
+}
+
+.scroll-up {
+  fill: #145caa;
+}
